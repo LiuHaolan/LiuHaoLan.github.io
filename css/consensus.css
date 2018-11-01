@@ -1,0 +1,223 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+/*@font-face {
+    font-family: metropolis;
+    src: url('./metropolis/Metropolis-Bold.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+*/
+
+@font-face {
+    font-family: metropolis;
+    src: url('./metropolis/Metropolis-Bold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: metropolis;
+    src: url('./metropolis/Metropolis-SemiBold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: metropolis;
+    src: url('./metropolis/Metropolis-Regular.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: metropolis;
+    src: url('./metropolis/Metropolis-Light.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+body {
+    overflow-x: hidden;
+    font-size: 15px;
+    font-family: Metropolis;
+    font-weight: 500;
+    margin: 0 auto;
+    max-width: 1440px;
+
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+}
+
+.nav {
+    padding-left: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #428bca;
+}
+
+.fixed {
+    position: fixed;
+}
+
+/* sidebar */
+.bs-docs-sidebar {
+    padding-left: 30px;
+    margin-top:55px;
+    margin-bottom: 20px;
+}
+
+ul ul {
+    padding-left: 20px;
+}
+
+/* all links */
+.bs-docs-sidebar .nav>li>a {
+    color: #999;
+    padding: 4px 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* nested links */
+.bs-docs-sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+.bs-docs-sidebar .nav>.active>a {  
+    color: #563d7c; 
+}
+
+/* all links */
+.bs-docs-sidebar .nav>li>a {
+    /*add trasnparent border */
+    border-left: 2px solid transparent;
+}
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>li>a:hover, 
+.bs-docs-sidebar .nav>li>a:focus {
+    color: #000;                 
+    text-decoration: none;          
+    background-color: transparent;  
+    border-left: 3px solid #000; 
+}
+
+/* all active links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+    font-weight: 900;
+}
+/* nested active links */
+.bs-docs-sidebar .nav .nav>.active>a, 
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a {
+    font-weight: 900;
+}
+
+
+#page-content-wrapper{
+    vertical-align: middle;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+ .overview {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+ }
+
+
+
+.ul_li_indent li {
+    margin-bottom:13px
+
+}
+.justify {
+    text-align: justify;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: Metropolis;
+    font-weight: 700;
+    padding-top: 80px;
+    padding-bottom: 4px;
+    color: #408893;
+    text-align: center;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-family: Metropolis;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size:19px;
+    color: #408893;
+    text-align: center;
+}
+
+
+h6 {
+    text-transform: uppercase;
+    font-family: Metropolis;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size:15px;
+    color: #408893;
+    text-align: center;
+}
+
+.overview_h3 {
+    padding-top: 12px;
+    padding-bottom: 0px;
+    text-align: left;
+ }
+
+
+p {
+    text-align: justify;
+}
+.col-centered{
+float: none;
+margin: 0 auto;
+}
+
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 0;
+    }
+    #wrapper.toggled {
+    }
+  }
+@media screen and (max-width: 500px){
+    .bs-docs-sidebar {
+        display:none
+    }
+}
